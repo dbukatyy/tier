@@ -1,0 +1,157 @@
+extends layout/main
+
+block title
+	|Главная
+
+block content
+	
+
+	
+	.banner
+		.banner__title
+			h1.h1(data-aos="fade-left" data-aos-easing="ease-in-back") 
+				|Только качественные
+				br 
+				|шины
+			h2.h2(data-aos="fade-left" data-aos-easing="ease-in-back" data-aos-delay="300")  от производителя
+		.overlay
+
+	.container
+		.catalog-list
+			.catalog(style="background-image: url(img/legkovoi.png)" data-aos="fade-up")
+				h3.h3.catalog__title
+					| шины для
+					br
+					span
+						| грузовых авто
+				a.btn.link(href="category.html") перейти
+			.catalog(style="background-image: url(img/legkovoi.png)" data-aos="fade-up")
+				h3.h3.catalog__title
+					| шины для
+					br
+					span
+						| легкогрузовых авто
+				a.btn.link(href="category.html") перейти
+			.catalog(style="background-image: url(img/legkovoi.png)" data-aos="fade-up")
+				h3.h3.catalog__title
+					| шины для
+					br
+					span
+						| легкогрузовых авто
+				a.btn.link(href="category.html") перейти
+			.catalog(style="background-image: url(img/legkovoi.png)" data-aos="fade-up")
+				h3.h3.catalog__title
+					| шины для
+					br
+					span
+						| легкогрузовых авто
+				a.btn.link(href="category.html") перейти
+
+
+		//- ------------------- recomended -------------------- //
+		.slider.recomended
+			.slider__head
+				p.h4 Рекомендуем:
+				.slider__control
+					a.slider__left.icon-left-open.link(href="")
+					a.slider__right.icon-right-open.link(href="")
+			.slider__list
+				.slider__item
+					include section/card
+				.slider__item
+					include section/card
+				.slider__item
+					include section/card
+				.slider__item
+					include section/card
+				.slider__item
+					include section/card
+
+	//- ------------------- banner-sm -------------------- //
+	.banner.banner_sm
+		.banner__title
+			h1.h1(data-aos="fade-right") 
+				|у нас в наличии
+			h2.h2(data-aos="fade-right" data-aos-delay="200") более 200 видов шин
+		.overlay
+
+	.container
+		//- ------------------- recomended -------------------- //
+		.slider.ofnen
+			.slider__head
+				p.h4 часто покупаемое:
+				.slider__control
+					a.slider__left.icon-left-open.link(href="")
+					a.slider__right.icon-right-open.link(href="")
+			.slider__list
+				.slider__item
+					include section/card
+				.slider__item
+					include section/card
+				.slider__item
+					include section/card
+				.slider__item
+					include section/card
+				.slider__item
+					include section/card
+		//- ------------------- recomended -------------------- //
+		.slider.sale
+			.slider__head
+				p.h4 приобрести со скидкой:
+				.slider__control
+					a.slider__left.icon-left-open.link(href="")
+					a.slider__right.icon-right-open.link(href="")
+			.slider__list
+				.slider__item
+					include section/card
+				.slider__item
+					include section/card
+				.slider__item
+					include section/card
+				.slider__item
+					include section/card
+				.slider__item
+					include section/card
+
+	.contacts
+		.container
+			address.contact
+				h3.h3 Контакты:
+				p.contact__item.icon-location-1
+					span.country-name
+						|Беларусь, Брестская область 
+					span.postal-code
+						|224025, 
+					span.locality
+						|г. Брест, 
+					span.street-address
+						|ул. л-та Рябцева 78, оф. 20
+				p.contact__item.icon-phone
+					a.link(href="tel:")
+						|+375 29 629-13-11 
+						span
+							|velcom
+						br
+					a.link(href="tel:")
+						|+375 29 529-13-11 
+						span
+							|мтс
+						br
+					a.link(href="tel:")
+						|+375 16 259-28-00 
+						span
+							|тел/факс
+						br
+				a.email.link.icon-mail-2.contact__item(href="mailto:belshina@gmail.ru ") belshina@gmail.ru
+				a.link.icon-skype.contact__item(href="skype:andrey-kozlovskiy ") andrey-kozlovskiy
+				p.contact__item.icon-back
+					| Время работы: 
+					br
+					| ПН-ПТ: 8:30 - 17:00
+					br
+					| СБ, ВС: Выходной
+			.map#map
+
+
+
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title> Главная
+    </title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Test">
+    <meta name="description" content="Test">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="top-line">
+        <div class="container">
+          <div class="top-line__txt"><i class="icon-contact-man icon"></i><b>Козловский А. А. </b><span>Индивидуальный предприниматель</span></div>
+        </div>
+      </div>
+      <div class="middle-line">
+        <div class="container">
+          <div class="header-info">
+            <div class="logo-block"><a class="logo img-block" href="/"><img src="img/logo.png" alt="Belshina"></a>
+              <div class="name">
+                <p class="h1">бел<b>шина</b></p>
+                <p class="p">Оптовая и розничная торговля шинами</p>
+                <div class="img-block name__img"><img src="img/logotype.png" alt="Belshina"></div>
+              </div>
+            </div>
+            <div class="contact-block">
+              <div class="contact-block__info">
+                <p class="p">звоните в любое время</p><a class="link h4" href="tel:">+375 (29) 529-13-11</a>
+                <p class="p">Козловский Андрей Андреевич</p>
+              </div>
+              <div class="contact-block__icon"><i class="icon icon-red-phone"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-line">
+        <div class="container">
+          <nav class="navigation">
+            <ul class="menu ul">
+              <li class="menu__item"> <a class="menu__link link" href="/">Главная</a></li>
+              <li class="menu__item"> <a class="menu__link link" href="">Продукция</a>
+                <ul class="sub-menu">
+                  <li class="sub-menu__item"><a class="sub-menu__link link" href="category.html">Для легковых авто</a></li>
+                </ul>
+              </li>
+              <li class="menu__item"> <a class="menu__link link" href="about-us.html">О нас</a></li>
+              <li class="menu__item"> <a class="menu__link link" href="contacts.html">Контакты</a></li>
+            </ul>
+            <form class="search">
+              <div class="search__field">
+                <input class="search__input" type="text" placeholder="Поиск"><i class="icon-search"></i>
+              </div>
+            </form>
+            <div class="hamburger">
+              <div class="hamburger__line"></div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="contacts contacts_full">
+        <div class="container">
+          <address class="contact">
+            <h3 class="h3">Контакты:</h3>
+            <p class="contact__item icon-location-1"><span class="country-name">Беларусь, Брестская область </span><span class="postal-code">224025, </span><span class="locality">г. Брест, </span><span class="street-address">ул. л-та Рябцева 78, оф. 20</span></p>
+            <p class="contact__item icon-phone"><a class="link" href="tel:">+375 29 629-13-11 <span>velcom</span><br></a><a class="link" href="tel:">+375 29 529-13-11 <span>мтс</span><br></a><a class="link" href="tel:">+375 16 259-28-00 <span>тел/факс</span><br></a></p><a class="email link icon-mail-2 contact__item" href="mailto:belshina@gmail.ru ">belshina@gmail.ru</a><a class="link icon-skype contact__item" href="skype:andrey-kozlovskiy ">andrey-kozlovskiy</a>
+            <p class="contact__item icon-back">Время работы: <br>ПН-ПТ: 8:30 - 17:00<br>СБ, ВС: Выходной</p>
+          </address>
+          <div class="map" id="map"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p>ИП Козловский А.А. 2017 Все права защищены.</p><a class="link" href="" target="_blank">DigitalStudio ITTech.Group.</a>
+      </div>
+    </footer>
+    <script src="js/vendor.js"></script>
+    <script src="js/custom.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+  </body>
+</html>

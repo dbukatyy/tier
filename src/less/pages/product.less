@@ -1,0 +1,73 @@
+.product {
+	background: @c-white;
+	padding-bottom: 40px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px @c-lgray;
+
+	&__img {
+		width: 220px;
+		height: 220px;
+		position: relative;
+		border: 1px solid @c-lgray;
+
+		figure {
+			margin: 0;
+		}
+
+		.zoo-item,
+		.zoo-img {
+			background-size: contain;
+		}
+	}
+
+	&__header {
+		padding: 40px;
+		.flex-sb;
+	}
+
+	&__info {
+		width: calc(~'100% - 240px');
+	}
+
+	.h3 {
+		margin-top: 0;
+	}
+
+	.h4 {
+		margin: 20px 0 20px 40px;
+	}
+}
+
+.title {
+	color: @c-red;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.size {
+	.flex;
+	justify-content: space-between;
+	text-align: left;
+	padding: 10px 40px;
+	background: #e0e0e0;
+	&__name {
+		width: 55%;
+	}
+	&__val {
+		width: 20%;
+	}
+	&__price {
+		width: 20%;
+	}
+
+	&:nth-child(2n) {
+		background: @c-lgray;
+	}
+}
+
+.params {
+	.size;
+	&__val {
+		text-align: left;
+	}
+}

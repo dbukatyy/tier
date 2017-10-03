@@ -1,0 +1,284 @@
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	background-color: #f2f2f2;
+	font-family: 'Roboto', sans-serif;
+}
+
+.main {
+	flex: 1;
+}
+
+/*====banner====*/
+
+.banner {
+	.flex;
+	align-items: center;
+	justify-content: flex-end;
+	height: 740px;
+	background: url('../img/road-car-tire.png') 50% no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color: @c-white;
+	text-transform: uppercase;
+	overflow: hidden;
+	position: relative;
+
+	&__title {
+		text-align: right;
+		position: relative;
+		z-index: 10;
+		padding-right: 70px;
+
+		.h2 {
+			font-weight: normal;
+		}
+	}
+
+	&_sm {
+		height: 570px;
+		justify-content: flex-start;
+		background: url('../img/bg.png') 50% no-repeat;
+		margin: 40px 0;
+		.overlay {
+			position: absolute;
+			height: 100%;
+			width: 65%;
+			bottom: 0;
+			left: -20%;
+			background: rgba(235,42,48,.6);
+			transform: skew(-30deg);
+		}
+
+		.banner__title {
+			text-align: left;
+			padding-left: 50px;
+		}
+	}
+}
+
+.overlay {
+	position: absolute;
+	height: 100%;
+	width: 80%;
+	bottom: 0;
+	right: -20%;
+	background: rgba(235,42,48,.6);
+	transform: skew(-30deg);
+}
+
+/*====catalog====*/
+
+.catalog {
+	.flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 0 10px @c-lgray;
+	width: 49%;
+	height: 320px;
+	padding: 50px 30px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+	background-size: auto 100%;
+	background-color: @c-white;
+
+	&-list {
+		.flex-sb;
+		padding: 30px 0;
+	}	
+
+	&__title {
+		width: 65%;
+		text-transform: uppercase;
+		font-weight: normal;
+		margin: 0;
+		span {
+			color: @c-red;
+			font-weight: bold;
+		}
+	}
+}
+
+.btn {
+	width: 175px;
+	line-height: 46px;
+	text-align: center;
+	background: @c-red;
+	color: @c-white;
+	text-transform: uppercase;
+	border: 2px solid transparent;
+	box-sizing: border-box;
+	display: block;
+
+	&:hover {
+		border: 2px solid @c-red;
+		color: @c-red;
+		background: @c-white;
+	}
+
+}
+
+/*====card====*/
+.slider {
+	margin-bottom: 40px;
+	&__control {
+		a {
+			color: @c-black;
+			width: 30px;
+			height: 30px;
+			border: 1px solid @c-black;
+			text-align: center;
+			display: inline-block;
+			line-height: 30px;
+			&:hover {
+				color: @c-red;
+				border: 1px solid @c-red;
+			}
+		}
+
+		.slider__left {
+			margin-right: 10px;
+		}
+	}
+
+	&__head {
+		.flex-sb;
+		align-items: center;
+		box-shadow: 0 0 10px @c-lgray;
+		padding: 10px 25px;
+		margin-bottom: 30px;
+		background-color: @c-white;
+
+		p {
+			margin: 0;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	}
+}
+.card {
+	width: 275px;
+	height: 480px;
+	box-shadow: 0 0 10px @c-lgray;
+	overflow: hidden;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	margin: 10px auto;
+	background-color: @c-white;
+	position: relative;
+
+	&__flag {
+		position: absolute;
+		top: 10px;
+		left: 0;
+		background: @c-red;
+		color: @c-white;
+		padding: 5px;
+		z-index: 3;
+
+		&:after {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			content: '';
+			display: inline-block;
+			height: 100%;
+			width: 20px;
+			background: @c-red;
+			transform: skewX(-20deg);
+			z-index: -1;
+		}
+	}
+	&__price {
+		padding: 5px 0;
+		text-align: center;
+		border-top: 1px solid @c-red;
+		border-bottom: 1px solid @c-red;
+	}
+	&__img {
+		height: 190px;
+	}
+
+	.btn {
+		margin: auto;
+	}
+
+	&__title {
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-top: 0;
+
+		span {
+			color: @c-red;
+		}
+	}
+}
+
+/*====contacts====*/
+.contacts {
+	background-color: #353535;
+	padding: 30px 0;
+	.container {
+		.flex;
+		align-items: stretch;
+	}
+}
+
+.contact {
+	width: 40%;
+	color: @c-white;
+	font-style: normal;
+	a {
+		color: @c-white;	
+		display: block;
+
+		&:hover {
+			text-decoration: underline;
+
+			&:before {
+				text-decoration: none;
+			}
+		}	
+	}
+
+	.h3 {
+		text-transform: uppercase;
+	}
+
+	&__item {
+		position: relative;
+		margin-top: 0;
+		margin-bottom: 15px;
+		margin-left: 30px;
+		display: inline-block;
+		&:before {
+			color: @c-red;
+			position: absolute;
+			top: 0;
+			left: -30px;
+		}
+	}
+}
+
+.map {
+	width: 60%;
+	min-height: 300px;
+}
+
+/*====footer====*/
+.footer {
+	background-color: #353535;
+	color: @c-white;
+	border-top: 1px solid @c-lgray;
+
+	a {
+		color: @c-white;		
+	}
+	.container {
+		.flex-sb;
+		align-items: center;
+	}
+}

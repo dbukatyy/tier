@@ -1,0 +1,51 @@
+extends layout/main
+
+block title
+	|Главная
+
+block content
+	//- ------------------- banner -------------------- //
+
+	.contacts.contacts_full
+		.container
+			address.contact
+				h3.h3 Контакты:
+				p.contact__item.icon-location-1
+					span.country-name
+						|Беларусь, Брестская область 
+					span.postal-code
+						|224025, 
+					span.locality
+						|г. Брест, 
+					span.street-address
+						|ул. л-та Рябцева 78, оф. 20
+				p.contact__item.icon-phone
+					a.link(href="tel:")
+						|+375 29 629-13-11 
+						span
+							|velcom
+						br
+					a.link(href="tel:")
+						|+375 29 529-13-11 
+						span
+							|мтс
+						br
+					a.link(href="tel:")
+						|+375 16 259-28-00 
+						span
+							|тел/факс
+						br
+				a.email.link.icon-mail-2.contact__item(href="mailto:belshina@gmail.ru ") belshina@gmail.ru
+				a.link.icon-skype.contact__item(href="skype:andrey-kozlovskiy ") andrey-kozlovskiy
+				p.contact__item.icon-back
+					| Время работы: 
+					br
+					| ПН-ПТ: 8:30 - 17:00
+					br
+					| СБ, ВС: Выходной
+
+			.map#map
+
+
+
+
